@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project5</title>
+    <style>
+        #parent{
+            height: 750px;
+            width: 1600px;
+            background-image: linear-gradient(yellowgreen,rgb(7, 45, 7));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box1{
+            height: 500px;
+            width: 400px;
+            background-image: url(./IMG/pexels-sergio-souza-3198038.jpg);
+            border: 1px solid;
+            background-size: cover;
+            
+        }
+        #box2{
+            height: 500px;
+            width: 400px;
+            background-color: rgb(56, 8, 8);
+            border: 1px solid;
+            
+        }
+        .form{
+            padding: 20px;
+            color: white;
+            padding-left: 60px;
+            border: none;
+        }
+        input[type=submit]{
+            background-color: rgb(66, 94, 10);
+            border-radius: 15%;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+            <div id="box1"></div>
+            <div id="box2">
+                <form class="form">
+                    <h2>REGISTRATION INFO</h2><br>
+                        <label for="">Name</label>
+                        <input type="text"><br><br><br>
+                        <label for="">Birthdate</label>
+                        <input type="date" name="" id="">
+                         <br>
+                         <br><br>
+                        <select name="" id="">Gender
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                        </select>  <br><br><br>
+                        <input type="email" name="" id="" placeholder="Email">
+                        <br><br><br>
+                        <input type="submit" value="SUBMIT" >
+                        
+                    </form>
+            </div>
+       </div>
+</body>
+</html>
