@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+   margin: 0;
+
+   background-color: #111e27;
+   overflow: scroll;
+   color: white;
+}
+
+.header{
+   width: 100%;
+   height: 350px;
+margin:auto;
+
+}
+/* scroll horizontal navbar */
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: top;
+  padding: 50px;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 100px;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+/* Sidebar */
+.sidebar {
+  height: 500px;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 490px;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+.avatar {
+    vertical-align: center;
+    width: 150px;
+    height: 120px;
+    border-radius: 70%;
+    padding: 20px;
+  }
+
+
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    padding: 0px 20px;
+    height: 500px;
+    image-rendering: auto;
+  }
+
+  main img,
+p {
+  display: inline-block;
+  margin-left: 100px;
+  color: white;
+}
+ main img {
+  float: right;
+  height: 350px;
+  padding-right: 25px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;
+  }
+}
+
+/* Product */
+section {
+  box-sizing: border-box;
+  background-color: #333;
+  width: 100%;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  padding: 5px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding-left: 20px;
+ 
+}
+
+/* Search Contain */
+.search-container {
+  float: right;
+  padding-right: 70px;
+}
+ input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+ .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .search-container {
+    float: none;
+  }
+  input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+   input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+.footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color:white;
+  color: white ;
+  padding:100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+
+}
+.row{
+  background-color: #777;
+  width:85% ;
+  margin:auto ;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+   <div class="header"><marquee behavior="slide" direction="left" scrollamount="30" >
+   <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\navi.jpg" width="100%" height="350px">
+   </marquee>
+   </div>
+<nav>
+   <div class="scrollmenu">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#about">About</a>
+      <a href="#product">Product</a>  
+      <a href="#logo">Campus</a>
+      <a href="#custom">Section 1</a>
+      <a href="#section">Section 2</a>
+      <a href="#partners">Section 3</a>
+      <a href="#work">Work</a>
+    </div>
+   </nav>
+   <div class="sidebar">
+      <div class="dropdown">
+        <button class="dropbtn">Business</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\p4.jpg" alt="Avatar" class="avatar" >
+    </div>
+    
+    <div class="main">
+      
+      <h2 style="color: white;">News</h2>
+      <p style="color: crimson; font-size: 25px;"><b>Vedanta announces Oil discovery in OALP-I Block RJ-ONHP-2017/1, <br>Rajasthan, India</b></p>
+      <p style="font-size: 17px;" padding-left:250px>
+    Vedanta Ltd has notified the Management Committee, DGH and Ministry of Petroleum and Natural Gas on<br> 
+    February 21, 2022 of an Oil Discovery (named ‘Durga’) in its exploratory well WM-Basal DD Fan-1 drilled in OALP <br>
+    Block RJ-ONHP-2017/1 in Barmer District of Rajasthan. The approval of Management Committee has also been <br>sought. The Block was awarded to the Company in October 2018 and is one of the 41 Blocks awarded to it in <br>
+    OALP-I round of bidding. The Company holds 100% participating interest in the block.<br><br>
+
+    Durga-1 (earlier WM-Basal DD Fan-1) is the second well drilled in the Block RJ-ONHP-2017/1 to a depth of 2615m <br>
+    MDRT. This is the third hydrocarbon discovery notified by the Company under the OALP portfolio. During the<br>
+     drilling of the well, four hydrocarbon zones were encountered in the Dharvi Dungar (DD) formation of Late <br>
+     Paleocene to Early Eocene age.
+   </p>
+   
+   <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\p5.webp" style="float:right;" width="300px" height="300px">
+
+</div>
+<section>
+<div class="row">
+  <h1>Product</h1>
+  <div class="column">
+    <h2>Polyester Chips</h2>
+    <marquee behavior="slide" direction="left" scrollamount="10">
+    <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\chp1.jpg" alt="yarn" style="width:500px" height="300px">
+    <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\chp2.jpg" alt="yarn" style="width:500px" height="300px">
+    <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\chp3.jpg" alt="yarn" style="width:500px" height="300px">
+  </marquee>
+  </div>
+  <div class="column">
+    <h2>Fully Drawn Yarn</h2>
+    <marquee behavior="slide" direction="left" scrollamount="10">
+    <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\yarn1.jpg" alt="yarn" style="width:500px" height="300px">
+    <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\poly1.jpg" alt="yarn" style="width:500px" height="300px">
+    <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\yarn2.jpg" alt="yarn" style="width:500px" height="300px">
+  </marquee>
+  </div>
+  <div class="column">
+    <h2>Polyester Fabric</h2>
+    <marquee behavior="slide" direction="left" scrollamount="10">
+    <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\pFabric.jpg" alt="yarn" style="width:500px" height="300px">
+    <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\polyF.jpg" alt="yarn" style="width:500px" height="300px">
+    <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\bedshit.jpg" alt="yarn" style="width:500px" height="300px">
+  </marquee>
+  </div>
+</div>
+</section>
+
+  
+  <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\cmp1.jpeg" alt="cmp" style="width: 600px; height: 320px;">
+
+       <div class="search-container">
+        <h1>Campus</h1>
+        <h2>Registration Login</h2>
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit">Search</button><br><br>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"placeholder="Username"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="Username"><br><br>
+          <input type="submit" value="Submit">  <br>
+        </form>
+      </div>
+      <br><br>
+  </div><hr>
+    <footer>
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="C:\Users\rutuj\OneDrive\Desktop\Project Work\ims\logo.png" class="logo" width="200px" height="200px">
+          <p></p>
+        </div>
+        <div class="col-sm-3">
+          <h3>Company</h3>
+          <address>
+            <p>
+              Block No. 128,129,130 & 175<br>
+              Plot No. Z & E R.S No.1208 &120/1<br>
+              Taluka : Palsana, Village-Jalva<br>
+              Dist. Surat-394305.<br><br>
+              Phone :+91-02612239106<br>
+              Factory Board Line : 09974093573<br>
+              74=Ext 214
+              </p>
+            </address>
+            <p class="email-id">shreedurgasyntex@gmail.com</p></p>
+        </div>
+        <div class="col-sm-3">
+          <h3>List</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Product</a> </li> 
+            <li><a href="#">Campus</a></li>
+            <li><a href="#">Section</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h3>NewsLetter</h3>
+           <form>
+             <input type="email" placeholder="Enter Your Email">
+             <input type="submit" value="Submit">
+           </form>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
