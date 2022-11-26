@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransForm</title>
+    <style>
+        body{
+            height: 750px;
+            width: 1500px;
+            background-image: linear-gradient(rgb(238, 0, 255),rgb(26, 187, 227));
+            display: flex;
+           
+        }
+        #parent{
+            height: 600px;
+            width: 800px;
+           background-color: white;
+           box-shadow: 5px 5px;
+           margin-top: 80px;
+           margin-left: 330px;
+        }
+        
+        h1{
+            text-align: center;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;            
+           background-image: linear-gradient(purple,rgb(18, 173, 204),red);
+        }
+
+          #form{
+             margin-left: 100px;
+             margin-top: 50px;
+            
+           }
+          input[type=text]{
+            height: 30px;
+            width: 290px;
+            border: 1px solid;
+            /* border-bottom: 2px solid black; */
+            border: none;
+            box-shadow: 0px 1px;
+            font-size: medium;
+          }
+         input[type=email]{
+            height: 30px;
+            width: 290px;
+            border: 1px solid;
+            /* border-bottom: 2px solid black; */
+            border: none;
+            box-shadow: 0px 1px;
+            font-size: medium;
+         }
+         #text{
+            border: 2px solid black;
+         }
+         input[type=submit]{
+            height: 40px;
+            width: 150px;
+            border: 1px solid ;
+            background-image: linear-gradient(rgb(15, 160, 197),purple);
+            font-size: 20px;
+            border-radius: 5px;
+            margin-left: 200px;
+         }
+    </style>
+</head>
+<body>
+    <div id="parent">
+             <h1>Responsive Contact us Form</h1>
+          <div id="form">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last name"><br><br><br>
+            <input type="email" name="" id="" placeholder="Email Address">
+            <input type="text" placeholder="Website Name"><br><br><br>
+            <textarea name="" id="text" cols="30" rows="10"></textarea><br><br><br><br>
+            <input type="submit" value="Submit">
+          </div>   
+          
+        
+    </div>
+</body>
+</html>
