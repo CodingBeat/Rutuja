@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project6</title>
+    <style>
+        body{
+            height: 700px;
+           background-image: linear-gradient(white,black);
+        }
+        table{
+          height: 300px;
+          width: 600px;
+          margin: 0% auto;
+          margin-top: 10%;
+          box-shadow: 10px 10px 4px rgb(63, 59, 59);
+          background-color: black;
+         
+        }
+        th{
+           padding: 10px;
+           background-color: rgb(24, 24, 71);
+           border: 2px solid black;
+           border-collapse: collapse;
+           color: white;
+           font-size: 20px;
+        }
+        .hotpink{
+            background-color: rgb(200, 5, 102);
+            
+        }
+        .litepink{
+            background-color: rgb(239, 124, 222);
+        }
+        td{
+            padding: 10px;
+        }
+        .gray{
+            background-color: rgb(193, 188, 188);
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <table border="1px">
+        <tr>
+            <th colspan="2">Subject</th>
+            <th>John Doe</th>
+            <th>Mirium Luther</th>
+        </tr>
+        <tr>
+            <td rowspan="2" class="gray">Biology</td>
+            <td class="hotpink">Practical</td>
+            <td class="litepink">A</td>
+            <td class="hotpink">A</td>
+        </tr>
+        <tr>
+            <td class="litepink">Theory</td>
+            <td class="hotpink">A+</td>
+            <td class="litepink">A</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="hotpink">Chemistry</td>
+            <td class="gray">Practical</td>
+            <td class="litepink">B</td>
+            <td class="gray">C</td>
+        </tr>
+        <tr>
+            <td class="litepink">Theory</td>
+            <td class="gray">A</td>
+            <td class="litepink">C+</td>
+        </tr>
+        <tr>
+           <td rowspan="2" class="gray">Physics</td>
+           <td class="hotpink">Practical</td>
+           <td class="litepink">A</td>
+           <td class="hotpink">A</td>
+        </tr>
+         <tr>
+            <td class="litepink">Theroy</td>
+            <td class="hotpink">A-</td>
+            <td class="litepink" >A-</td>
+         </tr>
+    </table>
+    
+</body>
+</html>
